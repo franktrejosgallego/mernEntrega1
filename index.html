@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="d-flex align-items-center">
+    <h1 class="text-center">HOLA MUNDO</h1>
+    </div>
+
+    <script>
+        let monto = prompt("ingrese el monto a cobrar :");
+        console.log(typeof monto);
+        let retencion = 0;
+        let pago = monto;
+        if(monto > 1500){
+            retencion = monto * 0.08;
+            pago = monto * 0.92;
+        }
+
+        console.log("Monto Total: S/", monto);
+        console.log("retencion: S/", retencion);
+        console.log("A pagar: S/", pago);
+
+    </script>
+</body>
+</html>
